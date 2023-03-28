@@ -1,5 +1,12 @@
 'use client'
 
+function showInAppInstallPromotion() {
+  console.log("Promote to install pwa!")
+}
+
+function hideInAppInstallPromotion() {
+  console.log("Hide pwa install promotion")
+}
 
 export default function Browser() {
   
@@ -14,7 +21,7 @@ export default function Browser() {
   });
   
   // Récupération des données d'installation
-  installButton.addEventListener('click', async () => {
+  const installPwa = async () => {
     deferredPrompt.prompt();
     const { outcome } = await deferredPrompt.userChoice;
     deferredPrompt = null;
@@ -23,7 +30,7 @@ export default function Browser() {
     } else if (outcome === 'dismissed') {
       console.log('User dismissed the install prompt');
     }
-  });
+  }
 
   // Détection du lancement de la pwa par un utilisateur
   window.addEventListener('DOMContentLoaded', () => {
@@ -34,8 +41,8 @@ export default function Browser() {
     console.log('DISPLAY_MODE_LAUNCH:', displayMode);
 
     // Détection d'un changement de navigateur
-    window.matchMedia('(display-mode: standalone)')
-      .addListener(event => {
+    const standalone = window.matchMedia('(display-mode: standalone)')
+    standalone.addEventListener(event => {
           if (event.matches) {
              // Depuis un navigateur vers un mobile
           } else {
@@ -55,6 +62,7 @@ export default function Browser() {
 
   return (
     <>
+      <button onclick={installPwa}>Install PWA</button>
     </>
   )
 }
