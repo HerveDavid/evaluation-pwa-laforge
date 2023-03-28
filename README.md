@@ -48,4 +48,4 @@ Dans le projet doctoliberal les cas d'usages à intégrer sont :
 Les utilisateurs utilisent des smartphones et des navigateurs diffèrents. 
 La pluralité des devices nécessite donc de guider le mieux possible l'utilisateur afin de lui faire installer la pwa dans son smartphone.
 Plus l'utilisateur reste sur l'application, plus l'application est rentable. 
-De plus, les comptes utilisateurs tentent à être multi-plateformes, ce qui obligent donc à rediriger les utilisateurs pour dans meilleur installation et intégration dans leurs devices.
+De plus, les comptes utilisateurs tentent à être multi-plateformes, ce qui oblige donc à rediriger les utilisateurs pour dans meilleur installation et intégration dans leurs devices.

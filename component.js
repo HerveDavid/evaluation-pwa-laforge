@@ -62,7 +62,20 @@ export default function Browser() {
 
   return (
     <>
-      <button onclick={installPwa}>Install PWA</button>
+      <h1>Comme une application mobile!</h1>
+      <p>Vous pouvez utiliser ce site comme une application mobile, il vous suffit simplement de clicker sur le bouton en-dessous !</p>
+
+      <button onclick={installPwa}>Installation d'une PWA</button>
+    
+      <h2>Si l'installation ne s'effectue pas suivre le lien "Navigateurs Compatibilités"</h2>
+    
+      <h1>Avantages</h1>
+      <p>Le site installé en pwa est comme une application mobile, ceci offre l'avantage d'utiliser le site en hors-ligne,
+    de profiter de la géolocalisation, des payements facilités (face-id) et de beaucoup d'autres fonctionnalités propre au mobile !</p>
+    
+      <h1>Navigateurs Compatibilités</h1>
+      <p>Seulement les navigateurs Chrome et Safarie permettent cette usage du site en mobile (pwa)</p>
+    
     </>
   )
 }
