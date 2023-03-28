@@ -21,11 +21,11 @@ https://developer.chrome.com/docs/workbox/modules/
 2) Méthodes de cache et utilisations possibles
 
 Les méthodes cache possible avec workbox sont :
-- cache only
-- network only
-- cache first
-- network first
-- stale while revalidate
+- cache only: une utilisation de cache par défaut, le cache est déjà pré-configuré comme une page hors-ligne par défaut
+- network only : une utilisation où seulement compte un usage en ligne, comme par exemple une page d'un utilisateur active avec ses ressources
+- cache first : une utilisation où les fichiers de change peu, comme les polices d'écritures
+- network first : une utilisation où la dernière mise à jour compte mais dans un usage hors-ligne, comme pour les ressources d'un SSR (NextJs)
+- stale while revalidate : une utilisation où la mise à jour ne compte pas mais dont son chargement doit être le plus court, comme un fichier css
 
 
 3) uses cases à intégrer dans le projet doctoliberal
